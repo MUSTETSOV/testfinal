@@ -1,0 +1,28 @@
+<div class="container">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li>
+                <a routerLink="list">List</a>
+            </li>
+            <li>
+                <a routerLink="edit/0">Create</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="header" id="myHeader">
+  <h2>My Test Work</h2>
+</div>
+
+    <div class="lds-roller" *ngIf="showLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
